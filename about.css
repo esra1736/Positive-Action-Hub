@@ -1,0 +1,147 @@
+
+       .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+    display: block;
+}
+       
+       :root {
+    --sage: #C9E4D5;
+    --blue: #C9DFF0;
+    --pink: #F3D1DC;
+    --lavender: #DCD2F0;
+    --cream: #FFF9F2;
+    --text: #354052;
+    --white: #FFFFFF;
+}
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--cream);
+    color: var(--text);
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 175px;
+    height: 100vh;
+
+    background-color: #C9DFF0;
+
+    padding: 28px 18px;
+
+    border-right: 1px solid #d5dce2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Logo */
+
+.logo {
+    width: 100%;
+
+    background-color: #DCD2F0;
+
+    color: #354052;
+
+    padding: 12px 8px;
+
+    text-align: center;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    border-radius: 8px;
+
+    margin-bottom: 35px;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* Navigation */
+
+.nav-links {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+}
+
+.nav-links li {
+    margin: 7px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #354052;
+
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+
+/* Navigation icons */
+
+.nav-icon {
+    width: 18px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* Hover */
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.55);
+
+    transform: translateX(2px);
+}
+
+
+/* Current page */
+
+.nav-links .active {
+    background-color: rgba(255, 255, 255, 0.75);
+
+    font-weight: 600;
+}
+

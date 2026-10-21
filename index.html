@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Positive Action Hub</title>
+    <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+</head>
+
+
+<body>
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://www.image2url.com/r2/default/images/1790599597674-cb165a45-792c-4510-ae4f-89b3dbd04995.jpeg" alt="Positive Action Hub logo">
+        </div>
+
+
+        <!-- Navigation -->
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html" class="active">
+                    <span class="nav-icon">⌂</span>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="opportunities.html">
+                    <span class="nav-icon">⌕</span>
+                    Opportunities
+                </a>
+            </li>
+
+            <li>
+                <a href="cards.html">
+                    <span class="nav-icon">□</span>
+                    Action Cards
+                </a>
+            </li>
+
+            <li>
+                <a href="stories.html">
+                    <span class="nav-icon">♡</span>
+                    Stories
+                </a>
+            </li>
+
+            <li>
+                <a href="resources.html">
+                    <span class="nav-icon">▤</span>
+                    Resources
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    <span class="nav-icon">ⓘ</span>
+                    About Us
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- Login Button -->
+        <button class="login-button" onclick="openPopup()">
+            Log In
+        </button>
+
+    </aside>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main">
+
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <h1>
+                    Small Actions.<br>
+                    Big Change.<br>
+                    Tomorrow.
+                </h1>
+
+
+                <p>
+                    Discover opportunities, take action,
+                    and make a positive impact within your community.
+                </p>
+
+
+                <div class="buttons">
+
+                    <a href="opportunities.html"
+                       class="button primary">
+                        Find Opportunities
+                    </a>
+
+                    <a href="about.html"
+                       class="button secondary">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Image -->
+
+            <div class="hero-image">
+
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP._1Iq8wwzryrzCcfcoHCeVQHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Young people working together to make a positive difference"
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             LOGIN POPUP
+        ========================== -->
+
+        <div id="popupOverlay" class="overlay-container">
+
+            <div class="popup-box">
+
+                <!-- Close button -->
+
+                <button
+                    class="close-x"
+                    onclick="closePopup()">
+
+                    ×
+
+                </button>
+
+
+                <h2>Welcome Back!</h2>
+
+                <p class="popup-subtitle">
+                    Log in to continue making a difference.
+                </p>
+
+
+                <form
+                    class="form-container"
+                    onsubmit="login(event)">
+
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your username"
+                        required
+                    >
+
+
+                    <label for="email">
+                        password
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="btn-submit">
+
+                        Log In
+
+                    </button>
+
+                </form>
+
+
+                <p class="signup-text">
+                    Don't have an account?
+                    <a href="#">Sign up</a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             IMPACT SECTION
+        ========================== -->
+
+        <section class="impact">
+
+            <!-- Decorative curved line -->
+
+            <div class="impact-line">
+
+                <svg
+                    viewBox="0 0 1000 100"
+                    preserveAspectRatio="none">
+
+                    <path
+                        d="M0,55
+                           C120,20 180,80 300,45
+                           S500,25 600,50
+                           S800,75 1000,35"
+
+                        fill="none"
+                        stroke="#777"
+                        stroke-width="1.5"
+                    />
+
+                </svg>
+
+            </div>
+
+
+            <h2>
+                How Can You Make an Impact?
+            </h2>
+
+
+            <div class="impact-options">
+
+
+                <!-- Find Opportunities -->
+
+                <div class="impact-item">
+
+                    <div class="icon">
+                        🔎
+                    </div>
+
+                    <h3>
+                        Find Opportunities
+                    </h3>
+
+                </div>
+
+
+                <!-- Action Cards -->
+
+                <div class="impact-item">
+
+                    <div class="icon">
+                        💡
+                    </div>
+
+                    <h3>
+                        Try an Action Card
+                    </h3>
+
+                </div>
+
+
+                <!-- Stories -->
+
+                <div class="impact-item">
+
+                    <div class="icon">
+                        💬
+                    </div>
+
+                    <h3>
+                        Read Stories
+                    </h3>
+
+                </div>
+
+
+                <!-- Resources -->
+
+                <div class="impact-item">
+
+                    <div class="icon">
+                        📖
+                    </div>
+
+                    <h3>
+                        Explore Resources
+                    </h3>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

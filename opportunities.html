@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Volunteer Opportunities | Positive Action Hub</title>
+
+    <link rel="stylesheet" href="opportunities.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="Logo.jpeg" alt="Positive Action Hub logo">
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    <span class="nav-icon">⌂</span>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="opportunities.html" class="active">
+                    <span class="nav-icon">⌕</span>
+                    Opportunities
+                </a>
+            </li>
+
+            <li>
+                <a href="cards.html">
+                    <span class="nav-icon">□</span>
+                    Action Cards
+                </a>
+            </li>
+
+            <li>
+                <a href="stories.html">
+                    <span class="nav-icon">♡</span>
+                    Stories
+                </a>
+            </li>
+
+            <li>
+                <a href="resources.html">
+                    <span class="nav-icon">▤</span>
+                    Resources
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    <span class="nav-icon">ⓘ</span>
+                    About Us
+                </a>
+            </li>
+
+        </ul>
+
+
+        <button class="login-button" onclick="openPopup()">
+            Log In
+        </button>
+
+    </aside>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main">
+
+
+        <!-- TOP BAR -->
+
+      <header class="top-bar">
+
+    <div class="search-box">
+
+        <span>⌕</span>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search opportunities..."
+        >
+
+    </div>
+
+
+    <div class="top-icons">
+
+        <span class="notification">
+            ♧
+        </span>
+
+        <div class="profile-circle"></div>
+
+    </div>
+
+</header>
+
+
+
+        <!-- =========================
+             PAGE HEADER
+        ========================== -->
+
+        <section class="page-header">
+
+            <h1>
+                Volunteering Opportunities
+            </h1>
+
+            <p>
+                Discover ways to make a positive impact in your community.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             FILTERS
+        ========================== -->
+
+        <section class="filters">
+
+
+            <div class="filter-group">
+
+                <label for="causeFilter">
+                    Cause
+                </label>
+
+                <select id="causeFilter">
+
+                    <option value="all">
+                        All Causes
+                    </option>
+
+                    <option value="environment">
+                        Environment
+                    </option>
+
+                    <option value="education">
+                        Education
+                    </option>
+
+                    <option value="community">
+                        Community Support
+                    </option>
+
+                    <option value="animal">
+                        Animal Welfare
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="filter-group">
+
+                <label for="locationFilter">
+                    Location
+                </label>
+
+                <select id="locationFilter">
+
+                    <option value="all">
+                        All Locations
+                    </option>
+
+                    <option value="delhi">
+                        Delhi
+                    </option>
+
+                    <option value="gurugram">
+                        Gurugram
+                    </option>
+
+                    <option value="tamilnadu">
+                        Tamil Nadu
+                    </option>
+
+                    <option value="india">
+                        Pan-India
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="filter-group">
+
+                <label for="ageFilter">
+                    Age Group
+                </label>
+
+                <select id="ageFilter">
+
+                    <option value="all">
+                        All Ages
+                    </option>
+
+                    <option value="teen">
+                        Teenagers
+                    </option>
+
+                    <option value="18plus">
+                        18+
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="filter-group">
+
+                <label for="timeFilter">
+                    Time Commitment
+                </label>
+
+                <select id="timeFilter">
+
+                    <option value="all">
+                        Anytime
+                    </option>
+
+                    <option value="weekend">
+                        Weekend
+                    </option>
+
+                    <option value="flexible">
+                        Flexible
+                    </option>
+
+                    <option value="weekly">
+                        Weekly
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                class="apply-button"
+                onclick="applyFilters()">
+
+                Apply Filters
+
+            </button>
+
+
+            <button
+                class="clear-button"
+                onclick="clearFilters()">
+
+                Clear filters
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =========================
+             RESULTS HEADER
+        ========================== -->
+
+        <div class="results-header">
+
+            <h3 id="resultsCount">
+                Showing 6 opportunities
+            </h3>
+
+
+            <div class="sort-container">
+
+                <label for="sortSelect">
+                    Sort by:
+                </label>
+
+                <select id="sortSelect">
+
+                    <option value="newest">
+                        Newest
+                    </option>
+
+                    <option value="cause">
+                        Cause
+                    </option>
+
+                    <option value="location">
+                        Location
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             OPPORTUNITY CARDS
+        ========================== -->
+
+        <section class="opportunity-grid" id="opportunityGrid">
+
+
+
+            <!-- CARD 1 -->
+
+            <article
+                class="opportunity-card"
+                data-cause="environment"
+                data-location="india"
+                data-age="teen"
+                data-time="weekend">
+
+                <img class="opportunity-image environment-image" src="https://wateractionhubfrontdoor-d6dwaqhbgwebcfg2.z01.azurefd.net/media/CACHE/images/organizations/2018/03/14/efi/7cc77a023c26c0f953167e15a0c23d53.jpg">
+                    
+        </img>
+
+
+                <div class="opportunity-content">
+
+                    <h2>
+                        Environmental Volunteering
+                    </h2>
+
+                    <p class="organization">
+                        Environmentalist Foundation of India
+                    </p>
+
+
+                    <p class="detail">
+                        📍 India
+                    </p>
+
+                    <p class="detail">
+                        ◷ Weekends
+                    </p>
+
+
+                    <span class="tag environment-tag">
+                        Environment
+                    </span>
+
+
+                    <p class="description">
+                        Join environmental activities such as
+                        clean-ups, plantation drives and conservation
+                        projects.
+                    </p>
+
+
+                    <div class="card-buttons">
+
+                        <a
+                            href="#"
+                            class="view-button">
+
+                            View Details
+
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-button">
+
+                            Contact NGO
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CARD 2 -->
+
+            <article
+                class="opportunity-card"
+                data-cause="education"
+                data-location="gurugram"
+                data-age="18plus"
+                data-time="flexible">
+
+                <img class="opportunity-image education-image" src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/ed/a2/0b/eda20bd3-3782-540f-c92a-e48bd97032fd/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/512x512bb.jpg">
+                    
+        </img>
+
+
+                <div class="opportunity-content">
+
+                    <h2>
+                        Community Education
+                    </h2>
+
+                    <p class="organization">
+                        DLF Engage
+                    </p>
+
+
+                    <p class="detail">
+                        📍 Gurugram, India
+                    </p>
+
+                    <p class="detail">
+                        ◷ Flexible
+                    </p>
+
+
+                    <span class="tag education-tag">
+                        Education
+                    </span>
+
+
+                    <p class="description">
+                        Support community programmes involving
+                        education, mentoring and skill development.
+                    </p>
+
+
+                    <div class="card-buttons">
+
+                        <a
+                            href="#"
+                            class="view-button">
+
+                            View Details
+
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-button">
+
+                            Contact NGO
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CARD 3 -->
+
+            <article
+                class="opportunity-card"
+                data-cause="education"
+                data-location="delhi"
+                data-age="teen"
+                data-time="weekly">
+
+                <img class="opportunity-image community-image" src="https://tse4.mm.bing.net/th/id/OIP.wOHBKEO4LseXEzfZBLkIrAHaIB?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                
+        </img>
+
+
+                <div class="opportunity-content">
+
+                    <h2>
+                        Teach & Mentor
+                    </h2>
+
+                    <p class="organization">
+                        DASTAK
+                    </p>
+
+
+                    <p class="detail">
+                        📍 Delhi, India
+                    </p>
+
+                    <p class="detail">
+                        ◷ Weekly
+                    </p>
+
+
+                    <span class="tag education-tag">
+                        Education
+                    </span>
+
+
+                    <p class="description">
+                        Help students through tutoring, computer
+                        sessions, literacy activities and mentoring.
+                    </p>
+
+
+                    <div class="card-buttons">
+
+                        <a
+                            href="#"
+                            class="view-button">
+
+                            View Details
+
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-button">
+
+                            Contact NGO
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CARD 4 -->
+
+            <article
+                class="opportunity-card"
+                data-cause="environment"
+                data-location="india"
+                data-age="teen"
+                data-time="flexible">
+
+                <img class="opportunity-image environment-image" src="https://tse4.mm.bing.net/th/id/OIP.gcQssAoMrsk2g0RLJnefrwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                    
+        </img>
+
+
+                <div class="opportunity-content">
+
+                    <h2>
+                        Environment & Education
+                    </h2>
+
+                    <p class="organization">
+                        Earthmai Foundation
+                    </p>
+
+
+                    <p class="detail">
+                        📍 Pan-India
+                    </p>
+
+                    <p class="detail">
+                        ◷ Flexible
+                    </p>
+
+
+                    <span class="tag environment-tag">
+                        Environment
+                    </span>
+
+
+                    <p class="description">
+                        Get involved in environmental projects,
+                        education initiatives and community activities.
+                    </p>
+
+
+                    <div class="card-buttons">
+
+                        <a
+                            href="#"
+                            class="view-button">
+
+                            View Details
+
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-button">
+
+                            Contact NGO
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CARD 5 -->
+
+            <article
+                class="opportunity-card"
+                data-cause="community"
+                data-location="india"
+                data-age="teen"
+                data-time="flexible">
+
+                <img class="opportunity-image community-image" src="https://www.sevaafoundation.com/static/media/sevaa.b92ad43e52e2bc06f667.png">
+        
+                </img>
+
+
+                <div class="opportunity-content">
+
+                    <h2>
+                        Community Support
+                    </h2>
+
+                    <p class="organization">
+                        Sevaa Foundation
+                    </p>
+
+
+                    <p class="detail">
+                        📍 India
+                    </p>
+
+                    <p class="detail">
+                        ◷ Flexible
+                    </p>
+
+
+                    <span class="tag community-tag">
+                        Community Support
+                    </span>
+
+
+                    <p class="description">
+                        Support food distribution, education,
+                        community service and environmental activities.
+                    </p>
+
+
+                    <div class="card-buttons">
+
+                        <a
+                            href="#"
+                            class="view-button">
+
+                            View Details
+
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-button">
+
+                            Contact NGO
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CARD 6 -->
+
+            <article
+                class="opportunity-card"
+                data-cause="environment"
+                data-location="tamilnadu"
+                data-age="18plus"
+                data-time="weekend">
+
+                <img class="opportunity-image environment-image" src="https://yt3.googleusercontent.com/ytc/AIdro_m4wH_70RrWXBLW1RCdp9Ofh14oR-PKRWzPiWCtmjZAwA=s900-c-k-c0x00ffffff-no-rj">
+        </img>
+
+
+                <div class="opportunity-content">
+
+                    <h2>
+                        Tree Plantation & Conservation
+                    </h2>
+
+                    <p class="organization">
+                        Geo India Foundation
+                    </p>
+
+
+                    <p class="detail">
+                        📍 Tamil Nadu, India
+                    </p>
+
+                    <p class="detail">
+                        ◷ Weekends
+                    </p>
+
+
+                    <span class="tag environment-tag">
+                        Environment
+                    </span>
+
+
+                    <p class="description">
+                        Participate in tree planting, environmental
+                        restoration and community projects.
+                    </p>
+
+
+                    <div class="card-buttons">
+
+                        <a
+                            href="#"
+                            class="view-button">
+
+                            View Details
+
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-button">
+
+                            Contact NGO
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             PAGINATION
+        ========================== -->
+
+        <div class="pagination">
+
+            <button>
+                ‹
+            </button>
+
+            <button class="current-page">
+                1
+            </button>
+
+            <button>
+                2
+            </button>
+
+            <button>
+                ›
+            </button>
+
+        </div>
+
+
+
+    </main>
+
+
+
+    <!-- =========================
+         LOGIN POPUP
+    ========================== -->
+
+    <div id="popupOverlay" class="overlay-container">
+
+        <div class="popup-box">
+
+            <button
+                class="close-x"
+                onclick="closePopup()">
+
+                ×
+
+            </button>
+
+
+            <h2>
+                Welcome Back!
+            </h2>
+
+
+            <p class="popup-subtitle">
+                Log in to continue making a difference.
+            </p>
+
+
+            <form
+                class="form-container"
+                onsubmit="login(event)">
+
+                <label for="username">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter your username"
+                    required
+                >
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    class="btn-submit">
+
+                    Log In
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="opportunities.js"></script>
+
+</body>
+
+</html>

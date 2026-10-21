@@ -1,0 +1,377 @@
+/* =====================================================
+   RESOURCES & CAUSES PAGE
+===================================================== */
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.resources-header {
+    margin-bottom: 35px;
+}
+
+.resources-header h1 {
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+.resources-header p {
+    font-size: 15px;
+
+    color: #687080;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.section-heading {
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    font-size: 23px;
+
+    margin-bottom: 5px;
+}
+
+.section-heading p {
+    font-size: 13px;
+
+    color: #687080;
+}
+
+
+/* =========================
+   CAUSES
+========================= */
+
+.causes-section {
+    margin-bottom: 40px;
+}
+
+.causes-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+/* Cause card */
+
+.cause-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border: 1px solid #E0E0E0;
+
+    border-radius: 12px;
+
+    transition: 0.2s;
+}
+
+.cause-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 18px rgba(53, 64, 82, 0.08);
+}
+
+
+/* Cause icons */
+
+.cause-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   PASTEL COLOURS
+========================= */
+
+.green {
+    background-color: #C9E4D5;
+}
+
+.blue {
+    background-color: #C9DFF0;
+}
+
+.pink {
+    background-color: #F3D1DC;
+}
+
+.lavender {
+    background-color: #DCD2F0;
+}
+
+
+/* Cause text */
+
+.cause-card h3 {
+    font-size: 16px;
+
+    margin-bottom: 7px;
+}
+
+.cause-card p {
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #687080;
+
+    margin-bottom: 10px;
+}
+
+.cause-card a {
+    font-size: 11px;
+
+    font-weight: 600;
+
+    color: #596F7D;
+
+    text-decoration: none;
+}
+
+.cause-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESOURCES
+========================= */
+
+.resources-section {
+    margin-bottom: 40px;
+}
+
+.resources-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+/* Resource card */
+
+.resource-card {
+    padding: 22px;
+
+    background-color: white;
+
+    border: 1px solid #E0E0E0;
+
+    border-radius: 12px;
+
+    transition: 0.2s;
+}
+
+.resource-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 18px rgba(53, 64, 82, 0.08);
+}
+
+
+/* Resource icon */
+
+.resource-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Category */
+
+.resource-category {
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+
+    font-weight: 700;
+
+    color: #687080;
+}
+
+
+/* Resource title */
+
+.resource-card h3 {
+    font-size: 16px;
+
+    line-height: 1.3;
+
+    margin: 7px 0 8px;
+}
+
+
+/* Resource description */
+
+.resource-card p {
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #687080;
+
+    margin-bottom: 15px;
+}
+
+
+/* Resource link */
+
+.resource-card a {
+    font-size: 11px;
+
+    font-weight: 600;
+
+    color: #596F7D;
+
+    text-decoration: none;
+}
+
+.resource-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   BOTTOM CTA
+========================= */
+
+.resource-cta {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 28px 35px;
+
+    background-color: #DCD2F0;
+
+    border-radius: 14px;
+}
+
+.resource-cta h2 {
+    font-size: 22px;
+
+    margin-bottom: 5px;
+}
+
+.resource-cta p {
+    font-size: 13px;
+
+    color: #687080;
+}
+
+.cta-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+.resource-button {
+    padding: 11px 16px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.primary-resource {
+    background-color: #C9E4D5;
+
+    color: #354052;
+}
+
+.secondary-resource {
+    background-color: #F3D1DC;
+
+    color: #354052;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1050px) {
+
+    .causes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resources-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .causes-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resource-cta {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}

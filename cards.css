@@ -1,0 +1,395 @@
+/* =====================================================
+   POSITIVE ACTION CARDS
+===================================================== */
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.cards-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 25px;
+}
+
+.cards-header h1 {
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+.cards-header p {
+    max-width: 650px;
+
+    color: #687080;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   RANDOM ACTION BUTTON
+========================= */
+
+.random-button {
+    flex-shrink: 0;
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #DCD2F0;
+
+    color: #354052;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.random-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(53, 64, 82, 0.1);
+}
+
+
+/* =========================
+   CATEGORY BUTTONS
+========================= */
+
+.category-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+    flex-wrap: wrap;
+}
+
+.category {
+    padding: 8px 14px;
+
+    border: 1px solid #D9DDE2;
+
+    border-radius: 20px;
+
+    background-color: white;
+
+    color: #596273;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.category:hover {
+    background-color: #F3D1DC;
+}
+
+.active-category {
+    background-color: #C9DFF0;
+
+    border-color: #C9DFF0;
+
+    color: #354052;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   FEATURED CARD
+========================= */
+
+.featured-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    min-height: 210px;
+
+    padding: 35px 45px;
+
+    margin-bottom: 30px;
+
+    background-color: #C9E4D5;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+.featured-content {
+    max-width: 650px;
+}
+
+.featured-label {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #596F63;
+}
+
+.featured-card h2 {
+    font-size: 30px;
+
+    margin: 8px 0 10px;
+}
+
+.featured-card p {
+    max-width: 600px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #596273;
+
+    margin-bottom: 20px;
+}
+
+.featured-illustration {
+    width: 130px;
+    height: 130px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.55);
+
+    font-size: 55px;
+}
+
+.action-button {
+    padding: 10px 16px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #354052;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   ACTION CARD GRID
+========================= */
+
+.action-card-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =========================
+   ACTION CARD
+========================= */
+
+.action-card {
+    position: relative;
+
+    padding: 22px;
+
+    min-height: 230px;
+
+    background-color: white;
+
+    border: 1px solid #E0E0E0;
+
+    border-radius: 12px;
+
+    transition: 0.2s;
+}
+
+.action-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(53, 64, 82, 0.08);
+}
+
+
+/* Card icon */
+
+.card-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Pastel icon colours */
+
+.green {
+    background-color: #C9E4D5;
+}
+
+.pink {
+    background-color: #F3D1DC;
+}
+
+.blue {
+    background-color: #C9DFF0;
+}
+
+.lavender {
+    background-color: #DCD2F0;
+}
+
+
+/* Category */
+
+.card-category {
+    font-size: 10px;
+
+    font-weight: 600;
+
+    color: #687080;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* Title */
+
+.action-card h2 {
+    font-size: 19px;
+
+    margin: 8px 0;
+}
+
+
+/* Description */
+
+.action-card p {
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    color: #687080;
+
+    margin-bottom: 15px;
+}
+
+
+/* Card button */
+
+.action-card button {
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 22px;
+
+    border: none;
+
+    background: none;
+
+    color: #596F7D;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.action-card button:hover {
+    text-decoration: underline;
+}
+
+
+/* Hidden cards */
+
+.action-card.hidden {
+    display: none;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .action-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .cards-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .featured-card {
+        padding: 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .action-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

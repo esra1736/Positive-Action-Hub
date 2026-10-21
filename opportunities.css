@@ -1,0 +1,675 @@
+/* =====================================================
+   OPPORTUNITIES PAGE
+===================================================== */
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 25px;
+
+    border-bottom: 1px solid #e6e2df;
+
+    margin: -60px -70px 45px;
+
+    padding: 0 30px;
+
+    background-color: #fffdf9;
+}
+
+
+/* Search */
+
+.search-box {
+    width: 360px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 13px;
+
+    background-color: white;
+
+    border: 1px solid #dddfe3;
+
+    border-radius: 8px;
+}
+
+.search-box span {
+    font-size: 20px;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 13px;
+
+    color: #354052;
+}
+
+
+/* Top icons */
+
+.top-icons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.notification {
+    font-size: 22px;
+
+    color: #354052;
+}
+
+.profile-circle {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background-color: #DCD2F0;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    font-size: 32px;
+
+    margin-bottom: 8px;
+
+    color: #354052;
+}
+
+.page-header p {
+    font-size: 15px;
+
+    color: #687080;
+}
+
+
+/* =========================
+   FILTERS
+========================= */
+
+.filters {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr 1fr 1fr auto;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border: 1px solid #dedfe2;
+
+    border-radius: 10px;
+
+    margin-bottom: 22px;
+}
+
+
+.filter-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.filter-group label {
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #354052;
+}
+
+.filter-group select {
+    height: 38px;
+
+    padding: 0 10px;
+
+    border: 1px solid #d7d9de;
+
+    border-radius: 6px;
+
+    background-color: white;
+
+    color: #354052;
+
+    font-size: 13px;
+}
+
+
+/* Apply button */
+
+.apply-button {
+    align-self: end;
+
+    height: 38px;
+
+    padding: 0 18px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #354052;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.apply-button:hover {
+    opacity: 0.9;
+}
+
+
+/* Clear */
+
+.clear-button {
+    position: absolute;
+
+    right: 20px;
+
+    bottom: -22px;
+
+    border: none;
+
+    background: none;
+
+    color: #687080;
+
+    font-size: 12px;
+
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RESULTS HEADER
+========================= */
+
+.results-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin: 30px 0 15px;
+}
+
+.results-header h3 {
+    font-size: 15px;
+}
+
+.sort-container {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 13px;
+}
+
+.sort-container select {
+    padding: 8px 10px;
+
+    border: 1px solid #d7d9de;
+
+    border-radius: 6px;
+
+    background-color: white;
+}
+
+
+/* =========================
+   OPPORTUNITY GRID
+========================= */
+
+.opportunity-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =========================
+   OPPORTUNITY CARD
+========================= */
+
+.opportunity-card {
+    display: flex;
+
+    gap: 15px;
+
+    padding: 13px;
+
+    background-color: white;
+
+    border: 1px solid #dedfe2;
+
+    border-radius: 9px;
+
+    min-height: 220px;
+
+    transition: 0.2s;
+}
+
+.opportunity-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 18px rgba(53, 64, 82, 0.08);
+}
+
+
+/* Image */
+
+.opportunity-image {
+    width: 95px;
+
+    height: 115px;
+
+    flex-shrink: 0;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+}
+
+
+/* Pastel image backgrounds */
+
+.environment-image {
+    background-color: #C9E4D5;
+}
+
+.education-image {
+    background-color: #C9DFF0;
+}
+
+.community-image {
+    background-color: #F3D1DC;
+}
+
+
+/* Card content */
+
+.opportunity-content {
+    flex: 1;
+}
+
+.opportunity-content h2 {
+    font-size: 16px;
+
+    margin-bottom: 5px;
+
+    color: #354052;
+}
+
+.organization {
+    font-size: 12px;
+
+    margin-bottom: 10px;
+
+    color: #596273;
+}
+
+.detail {
+    font-size: 12px;
+
+    margin: 5px 0;
+
+    color: #596273;
+}
+
+
+/* Tags */
+
+.tag {
+    display: inline-block;
+
+    padding: 4px 8px;
+
+    margin: 5px 0 8px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+.environment-tag {
+    background-color: #C9E4D5;
+}
+
+.education-tag {
+    background-color: #C9DFF0;
+}
+
+.community-tag {
+    background-color: #F3D1DC;
+}
+
+
+/* Description */
+
+.description {
+    font-size: 12px;
+
+    line-height: 1.45;
+
+    color: #596273;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   CARD BUTTONS
+========================= */
+
+.card-buttons {
+    display: flex;
+
+    gap: 8px;
+}
+
+.view-button,
+.contact-button {
+    flex: 1;
+
+    padding: 8px 6px;
+
+    border-radius: 6px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.view-button {
+    border: 1px solid #d7d9de;
+
+    color: #354052;
+
+    background-color: white;
+}
+
+.contact-button {
+    background-color: #C9E4D5;
+
+    color: #354052;
+
+    border: 1px solid #b6d6c4;
+}
+
+
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+.pagination button {
+    width: 35px;
+    height: 35px;
+
+    border: 1px solid #dedfe2;
+
+    border-radius: 6px;
+
+    background-color: white;
+
+    cursor: pointer;
+}
+
+.pagination .current-page {
+    background-color: #354052;
+
+    color: white;
+
+    border-color: #354052;
+}
+
+
+/* =========================
+   HIDDEN CARDS
+========================= */
+
+.opportunity-card.hidden {
+    display: none;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .opportunity-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .opportunity-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        grid-template-columns: 1fr;
+    }
+
+    .top-bar {
+        margin: -30px -30px 30px;
+
+        padding: 0 20px;
+    }
+
+    .search-box {
+        width: 220px;
+    }
+
+}
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 25px;
+
+    background-color: #FFF9F2;
+
+    border-bottom: 1px solid #E5E2DF;
+
+    margin: -60px -70px 45px;
+
+    padding: 0 30px;
+}
+
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.search-box {
+    width: 360px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    background-color: white;
+
+    border: 1px solid #D9DDE2;
+
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+.search-box:focus-within {
+    border-color: #B9D3E5;
+
+    box-shadow: 0 0 0 3px rgba(201, 223, 240, 0.35);
+}
+
+.search-box span {
+    font-size: 20px;
+
+    color: #596273;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 13px;
+
+    color: #354052;
+}
+
+.search-box input::placeholder {
+    color: #9A9FA8;
+}
+
+
+/* =========================
+   RIGHT SIDE ICONS
+========================= */
+
+.top-icons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+/* Notification */
+
+.notification {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+
+    color: #354052;
+
+    cursor: pointer;
+}
+
+
+/* Profile */
+
+.profile-circle {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background-color: #DCD2F0;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.profile-circle:hover {
+    transform: scale(1.05);
+}

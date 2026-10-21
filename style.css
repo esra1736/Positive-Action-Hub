@@ -1,0 +1,671 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #FFF9F2;
+
+    color: #354052;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 175px;
+    height: 100vh;
+
+    padding: 28px 18px;
+
+    background-color: #C9DFF0;
+
+    border-right: 1px solid #d5dce2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Logo */
+
+.logo {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+
+    display: block;
+
+    border-radius: 8px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-links {
+    list-style: none;
+
+    width: 100%;
+}
+
+.nav-links li {
+    margin: 7px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #354052;
+
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+
+/* Navigation icons */
+
+.nav-icon {
+    width: 18px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* Hover */
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.55);
+
+    transform: translateX(2px);
+}
+
+
+/* Active page */
+
+.nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.75);
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-button {
+    margin-top: auto;
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #F3D1DC;
+
+    color: #354052;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.login-button:hover {
+    background-color: #e9bdca;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main {
+    margin-left: 175px;
+
+    min-height: 100vh;
+
+    padding: 60px 70px;
+
+    background-color: #FFF9F2;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    min-height: 420px;
+
+    gap: 50px;
+}
+
+
+/* Hero text */
+
+.hero-text {
+    max-width: 520px;
+}
+
+.hero h1 {
+    font-size: 52px;
+
+    line-height: 1.05;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+
+    color: #596273;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+.button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 44px;
+
+    padding: 0 20px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: 0.2s;
+}
+
+
+/* Find Opportunities */
+
+.primary {
+    background-color: #C9E4D5;
+
+    color: #354052;
+
+    border: 1px solid #b6d6c4;
+}
+
+.primary:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+/* Learn More */
+
+.secondary {
+    background-color: #F3D1DC;
+
+    color: #354052;
+
+    border: 1px solid #e7bbc9;
+}
+
+.secondary:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-image {
+    width: 440px;
+
+    height: 300px;
+
+    flex-shrink: 0;
+
+    background-color: #C9DFF0;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   IMPACT SECTION
+========================= */
+
+.impact {
+    position: relative;
+
+    margin-top: 30px;
+
+    padding-top: 50px;
+
+    text-align: center;
+}
+
+
+/* Curved line */
+
+.impact-line {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 45px;
+
+    pointer-events: none;
+}
+
+.impact-line svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Heading */
+
+.impact h2 {
+    position: relative;
+
+    display: inline-block;
+
+    background-color: #FFF9F2;
+
+    padding: 0 15px;
+
+    font-size: 30px;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   IMPACT OPTIONS
+========================= */
+
+.impact-options {
+    display: flex;
+
+    justify-content: space-around;
+
+    gap: 30px;
+}
+
+.impact-item {
+    width: 180px;
+
+    text-align: center;
+}
+
+
+/* Circular icons */
+
+.icon {
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+}
+
+
+/* Different pastel colours */
+
+.impact-item:nth-child(1) .icon {
+    background-color: #C9E4D5;
+}
+
+.impact-item:nth-child(2) .icon {
+    background-color: #F3D1DC;
+}
+
+.impact-item:nth-child(3) .icon {
+    background-color: #DCD2F0;
+}
+
+.impact-item:nth-child(4) .icon {
+    background-color: #C9DFF0;
+}
+
+.impact-item h3 {
+    font-size: 15px;
+
+    font-weight: normal;
+}
+
+
+/* =========================
+   LOGIN POPUP
+========================= */
+
+.overlay-container {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(53, 64, 82, 0.35);
+
+    backdrop-filter: blur(3px);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+
+/* Popup */
+
+.popup-box {
+    position: relative;
+
+    width: 380px;
+
+    padding: 35px;
+
+    background-color: #FFF9F2;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+    animation: popupAppear 0.25s ease;
+}
+
+
+/* Popup animation */
+
+@keyframes popupAppear {
+
+    from {
+        opacity: 0;
+
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+}
+
+
+/* Close button */
+
+.close-x {
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 25px;
+
+    color: #354052;
+
+    cursor: pointer;
+}
+
+
+/* Popup heading */
+
+.popup-box h2 {
+    margin-bottom: 8px;
+
+    font-size: 28px;
+
+    color: #354052;
+}
+
+
+/* Popup subtitle */
+
+.popup-subtitle {
+    color: #687080;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   LOGIN FORM
+========================= */
+
+.form-container {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-bottom: 6px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.form-container input {
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #d8dce2;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.form-container input:focus {
+    border-color: #C9DFF0;
+
+    box-shadow: 0 0 0 3px rgba(201, 223, 240, 0.4);
+}
+
+
+/* Submit button */
+
+.btn-submit {
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #C9E4D5;
+
+    color: #354052;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+}
+
+.btn-submit:hover {
+    background-color: #b7d8c5;
+}
+
+
+/* Sign up text */
+
+.signup-text {
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 13px;
+
+    color: #687080;
+}
+
+.signup-text a {
+    color: #687f9b;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+    }
+
+    .main {
+        margin-left: 0;
+
+        padding: 30px;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        max-width: 440px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .impact-options {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+}

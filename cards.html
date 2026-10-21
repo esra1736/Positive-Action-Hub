@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Positive Action Cards | Positive Action Hub</title>
+
+    <link rel="stylesheet" href="cards.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="Logo.jpeg" alt="Positive Action Hub logo">
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    <span class="nav-icon">⌂</span>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="opportunities.html">
+                    <span class="nav-icon">⌕</span>
+                    Opportunities
+                </a>
+            </li>
+
+            <li>
+                <a href="cards.html" class="active">
+                    <span class="nav-icon">□</span>
+                    Action Cards
+                </a>
+            </li>
+
+            <li>
+                <a href="stories.html">
+                    <span class="nav-icon">♡</span>
+                    Stories
+                </a>
+            </li>
+
+            <li>
+                <a href="resources.html">
+                    <span class="nav-icon">▤</span>
+                    Resources
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    <span class="nav-icon">ⓘ</span>
+                    About Us
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main">
+
+
+        <!-- TOP BAR -->
+
+        <header class="top-bar">
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="cardSearch"
+                    placeholder="Search action cards..."
+                >
+
+            </div>
+
+
+            <div class="top-icons">
+
+                <span class="notification">
+                    ♧
+                </span>
+
+                <div class="profile-circle"></div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================
+             PAGE HEADER
+        ========================== -->
+
+        <section class="cards-header">
+
+            <div>
+
+                <h1>
+                    Positive Action Cards
+                </h1>
+
+                <p>
+                    Small actions that can create a positive impact.
+                    Choose an idea and make a difference today.
+                </p>
+
+            </div>
+
+
+            <button
+                class="random-button"
+                onclick="randomCard()">
+
+                ✨ Get a Random Action
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =========================
+             CATEGORY FILTERS
+        ========================== -->
+
+        <div class="category-buttons">
+
+            <button
+                class="category active-category"
+                onclick="filterCards('all')">
+
+                All
+
+            </button>
+
+            <button
+                class="category"
+                onclick="filterCards('environment')">
+
+                🌱 Environment
+
+            </button>
+
+            <button
+                class="category"
+                onclick="filterCards('community')">
+
+                🤝 Community
+
+            </button>
+
+            <button
+                class="category"
+                onclick="filterCards('education')">
+
+                📚 Education
+
+            </button>
+
+            <button
+                class="category"
+                onclick="filterCards('everyday')">
+
+                💡 Everyday Actions
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =========================
+             FEATURED CARD
+        ========================== -->
+
+        <section class="featured-card">
+
+            <div class="featured-content">
+
+                <span class="featured-label">
+                    ACTION OF THE DAY
+                </span>
+
+                <h2>
+                    Make Someone's Day
+                </h2>
+
+                <p>
+                    Do one small act of kindness for someone
+                    around you today. It could be helping a
+                    classmate, thanking someone, or simply
+                    checking in on a friend.
+                </p>
+
+                <button class="action-button">
+                    Try This Action →
+                </button>
+
+            </div>
+
+
+            <div class="featured-illustration">
+                💌
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CARD GRID
+        ========================== -->
+
+        <section class="action-card-grid">
+
+
+            <!-- CARD 1 -->
+
+            <article
+                class="action-card"
+                data-category="environment">
+
+                <div class="card-icon green">
+                    🌱
+                </div>
+
+                <span class="card-category">
+                    Environment
+                </span>
+
+                <h2>
+                    Plant Something
+                </h2>
+
+                <p>
+                    Plant a tree, flower, or herb and help
+                    create a greener space.
+                </p>
+
+                <button>
+                    Try This →
+                </button>
+
+            </article>
+
+
+
+            <!-- CARD 2 -->
+
+            <article
+                class="action-card"
+                data-category="community">
+
+                <div class="card-icon pink">
+                    🤝
+                </div>
+
+                <span class="card-category">
+                    Community
+                </span>
+
+                <h2>
+                    Help a Neighbour
+                </h2>
+
+                <p>
+                    Offer to help someone in your community
+                    with a small task.
+                </p>
+
+                <button>
+                    Try This →
+                </button>
+
+            </article>
+
+
+
+            <!-- CARD 3 -->
+
+            <article
+                class="action-card"
+                data-category="education">
+
+                <div class="card-icon blue">
+                    📚
+                </div>
+
+                <span class="card-category">
+                    Education
+                </span>
+
+                <h2>
+                    Share What You Know
+                </h2>
+
+                <p>
+                    Teach a friend something useful or help
+                    someone understand a difficult topic.
+                </p>
+
+                <button>
+                    Try This →
+                </button>
+
+            </article>
+
+
+
+            <!-- CARD 4 -->
+
+            <article
+                class="action-card"
+                data-category="environment">
+
+                <div class="card-icon lavender">
+                    ♻️
+                </div>
+
+                <span class="card-category">
+                    Environment
+                </span>
+
+                <h2>
+                    Reduce Your Waste
+                </h2>
+
+                <p>
+                    Choose one disposable item you use regularly
+                    and find a reusable alternative.
+                </p>
+
+                <button>
+                    Try This →
+                </button>
+
+            </article>
+
+
+
+            <!-- CARD 5 -->
+
+            <article
+                class="action-card"
+                data-category="community">
+
+                <div class="card-icon blue">
+                    💬
+                </div>
+
+                <span class="card-category">
+                    Community
+                </span>
+
+                <h2>
+                    Start a Conversation
+                </h2>
+
+                <p>
+                    Talk to someone about an issue in your
+                    community and listen to their perspective.
+                </p>
+
+                <button>
+                    Try This →
+                </button>
+
+            </article>
+
+
+
+            <!-- CARD 6 -->
+
+            <article
+                class="action-card"
+                data-category="everyday">
+
+                <div class="card-icon pink">
+                    💌
+                </div>
+
+                <span class="card-category">
+                    Everyday Action
+                </span>
+
+                <h2>
+                    Send a Thank You
+                </h2>
+
+                <p>
+                    Send someone a genuine message thanking
+                    them for something they have done.
+                </p>
+
+                <button>
+                    Try This →
+                </button>
+
+            </article>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="cards.js"></script>
+
+</body>
+
+</html>

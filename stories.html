@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Stories | Positive Action Hub</title>
+    <link rel="stylesheet" href="stories.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo-container">
+            <img src="Logo.jpeg" alt="Positive Action Hub Logo">
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html">
+                <span class="nav-icon">⌂</span>
+                Home
+            </a>
+
+            <a href="opportunities.html">
+                <span class="nav-icon">♧</span>
+                Opportunities
+            </a>
+
+            <a href="cards.html">
+                <span class="nav-icon">▣</span>
+                Positive Action Cards
+            </a>
+
+            <a href="stories.html" class="active">
+                <span class="nav-icon">▱</span>
+                Community Stories
+            </a>
+
+            <a href="resources.html">
+                <span class="nav-icon">♡</span>
+                Resources & Causes
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>Small actions.<br>Stronger communities.</p>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+
+            <div class="search-box">
+                <span>⌕</span>
+                <input
+                    type="text"
+                    id="storySearch"
+                    placeholder="Search stories..."
+                >
+            </div>
+
+            <div class="top-icons">
+                <span class="notification">♧</span>
+                <div class="profile-circle"></div>
+            </div>
+
+        </header>
+
+
+        <!-- PAGE HEADER -->
+        <section class="stories-header">
+
+            <div>
+                <h1>Community Stories</h1>
+                <p>
+                    Real people. Real actions. Real impact.
+                </p>
+            </div>
+
+            <select id="sortStories" class="sort-dropdown">
+                <option value="newest">Sort by: Newest</option>
+                <option value="oldest">Sort by: Oldest</option>
+            </select>
+
+        </section>
+
+
+        <!-- CATEGORY FILTERS -->
+        <div class="story-filters">
+
+            <button class="story-filter active-filter" onclick="filterStories('all', this)">
+                All Stories
+            </button>
+
+            <button class="story-filter" onclick="filterStories('environment', this)">
+                Environment
+            </button>
+
+            <button class="story-filter" onclick="filterStories('education', this)">
+                Education
+            </button>
+
+            <button class="story-filter" onclick="filterStories('health', this)">
+                Health
+            </button>
+
+            <button class="story-filter" onclick="filterStories('animals', this)">
+                Animals
+            </button>
+
+            <button class="story-filter" onclick="filterStories('community', this)">
+                Community
+            </button>
+
+        </div>
+
+
+        <!-- STORIES GRID -->
+        <section class="stories-grid" id="storiesGrid">
+
+
+            <!-- STORY 1 -->
+            <article class="story-card" data-category="environment">
+
+                <div class="story-image environment-image">
+                    <span>🌱</span>
+                </div>
+
+                <div class="story-content">
+
+                    <span class="story-tag environment-tag">
+                        Environment
+                    </span>
+
+                    <h2>Clean Shores, Stronger Future</h2>
+
+                    <p>
+                        A group of students organized weekly beach cleanups
+                        and removed over 500 kg of waste in three months.
+                    </p>
+
+                    <button class="read-story">
+                        Read Story
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- STORY 2 -->
+            <article class="story-card" data-category="education">
+
+                <div class="story-image education-image">
+                    <span>📚</span>
+                </div>
+
+                <div class="story-content">
+
+                    <span class="story-tag education-tag">
+                        Education
+                    </span>
+
+                    <h2>Making Learning Accessible</h2>
+
+                    <p>
+                        Five students started free tutoring for kids in
+                        their community, helping them learn every week.
+                    </p>
+
+                    <button class="read-story">
+                        Read Story
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- STORY 3 -->
+            <article class="story-card" data-category="animals">
+
+                <div class="story-image animals-image">
+                    <span>🐾</span>
+                </div>
+
+                <div class="story-content">
+
+                    <span class="story-tag animals-tag">
+                        Animals
+                    </span>
+
+                    <h2>A Home for Every Paw</h2>
+
+                    <p>
+                        A student group volunteered at a local shelter,
+                        helping care for and find homes for rescued animals.
+                    </p>
+
+                    <button class="read-story">
+                        Read Story
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- STORY 4 -->
+            <article class="story-card" data-category="environment">
+
+                <div class="story-image environment-image">
+                    <span>🌳</span>
+                </div>
+
+                <div class="story-content">
+
+                    <span class="story-tag environment-tag">
+                        Environment
+                    </span>
+
+                    <h2>Planting Hope</h2>
+
+                    <p>
+                        Their tree plantation drive has planted 1,000+
+                        saplings in parks, schools and community spaces.
+                    </p>
+
+                    <button class="read-story">
+                        Read Story
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- STORY 5 -->
+            <article class="story-card" data-category="community">
+
+                <div class="story-image community-image">
+                    <span>🤝</span>
+                </div>
+
+                <div class="story-content">
+
+                    <span class="story-tag community-tag">
+                        Community
+                    </span>
+
+                    <h2>Kindness in Action</h2>
+
+                    <p>
+                        This youth group collected essential supplies
+                        for families in need every month.
+                    </p>
+
+                    <button class="read-story">
+                        Read Story
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- STORY 6 -->
+            <article class="story-card" data-category="education">
+
+                <div class="story-image education-image">
+                    <span>📖</span>
+                </div>
+
+                <div class="story-content">
+
+                    <span class="story-tag education-tag">
+                        Education
+                    </span>
+
+                    <h2>Books That Change Lives</h2>
+
+                    <p>
+                        A small book drive collected more than 800 books
+                        to help build libraries for local schools.
+                    </p>
+
+                    <button class="read-story">
+                        Read Story
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- PAGINATION -->
+        <div class="story-pagination">
+
+            <button>‹</button>
+            <button class="current-page">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>›</button>
+
+        </div>
+
+    </main>
+
+
+    <script src="stories.js"></script>
+
+</body>
+</html>
